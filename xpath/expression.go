@@ -4,6 +4,7 @@ package xpath
 #include <libxml/xpath.h>
 #include <libxml/xpathInternals.h>
 #include <string.h>
+#include <stdlib.h>
 
 void check_xpath_syntax_noop(void *ctx, const char *fmt, ...) {
 }
