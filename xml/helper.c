@@ -49,7 +49,7 @@ xmlDoc* xmlParse(void *buffer, int buffer_len, void *url, void *encoding, int op
 	doc = xmlReadMemory(c_buffer, buffer_len, c_url, c_encoding, options);
 
 	if(doc == NULL) {
-		xmlErrorPtr error;
+	    const xmlError *error;
 	    xmlFreeDoc(doc);
 	    error = xmlGetLastError();
 		if(error != NULL && error_buffer != NULL && error->level >= XML_ERR_ERROR) {

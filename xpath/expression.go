@@ -14,7 +14,7 @@ char *check_xpath_syntax(const char *xpath) {
 	xmlSetGenericErrorFunc(NULL, err_func);
 	xmlResetLastError();
 	xmlXPathCompile((const xmlChar *)xpath);
-	xmlErrorPtr err = xmlGetLastError();
+	const xmlError *err = xmlGetLastError();
 	if (err != NULL) {
 		if (err->code == XML_XPATH_EXPR_ERROR) {
 			// TODO: Not the cleanest but should scale well
