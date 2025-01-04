@@ -11,7 +11,7 @@ void check_xpath_syntax_noop(void *ctx, const char *fmt, ...) {
 
 char *check_xpath_syntax(const char *xpath) {
 	xmlGenericErrorFunc err_func = check_xpath_syntax_noop;
-	initGenericErrorDefaultFunc(&err_func);
+	xmlSetGenericErrorFunc(NULL, err_func);
 	xmlResetLastError();
 	xmlXPathCompile((const xmlChar *)xpath);
 	xmlErrorPtr err = xmlGetLastError();
