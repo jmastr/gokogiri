@@ -67,6 +67,5 @@ func CheckXmlMemoryLeaks(t *testing.T) {
 	if !help.LibxmlCheckMemoryLeak() {
 		println("Found memory leaks!")
 		t.Errorf("Memory leaks: %d!!!", help.LibxmlGetMemoryAllocation())
-		help.LibxmlReportMemoryLeak()
 	}
 }

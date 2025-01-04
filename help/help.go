@@ -8,8 +8,6 @@ package help
 #include <libxml/HTMLtree.h>
 #include <libxml/HTMLparser.h>
 #include <libxml/xmlsave.h>
-
-void printMemoryLeak() { xmlMemDisplay(stdout); }
 */
 import "C"
 
@@ -67,8 +65,4 @@ func LibxmlGetMemoryAllocation() int {
 
 func LibxmlCheckMemoryLeak() bool {
 	return (C.xmlMemBlocks() == 0)
-}
-
-func LibxmlReportMemoryLeak() {
-	C.printMemoryLeak()
 }
