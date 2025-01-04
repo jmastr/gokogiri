@@ -3,6 +3,7 @@
 #include <string.h>
 #include <time.h>
 
+#include <libxml/parser.h>
 #include <libxml/xmlmemory.h>
 
 //#define TRACE_MEM
