@@ -30,15 +30,16 @@ Basic example:
     package main
 
     import (
+      "io"
       "net/http"
-      "io/ioutil"
+
       "github.com/jmastr/gokogiri"
     )
 
     func main() {
       // fetch and read a web page
       resp, _ := http.Get("http://www.google.com")
-      page, _ := ioutil.ReadAll(resp.Body)
+      page, _ := io.ReadAll(resp.Body)
 
       // parse the web page
       doc, _ := gokogiri.ParseHtml(page)
