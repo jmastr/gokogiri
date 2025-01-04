@@ -1,9 +1,9 @@
 Gokogiri
 ========
-[![Build Status](https://travis-ci.org/jbowtie/gokogiri.svg?branch=master)](https://travis-ci.org/jbowtie/gokogiri)
-[![codecov](https://codecov.io/gh/jbowtie/gokogiri/branch/master/graph/badge.svg)](https://codecov.io/gh/jbowtie/gokogiri)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jbowtie/gokogiri)](https://goreportcard.com/report/github.com/jbowtie/gokogiri)
-[![GoDoc](https://godoc.org/github.com/jbowtie/gokogiri?status.svg)](https://godoc.org/github.com/jbowtie/gokogiri)
+[![Build Status](https://travis-ci.org/jmastr/gokogiri.svg?branch=master)](https://travis-ci.org/jmastr/gokogiri)
+[![codecov](https://codecov.io/gh/jmastr/gokogiri/branch/master/graph/badge.svg)](https://codecov.io/gh/jmastr/gokogiri)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jmastr/gokogiri)](https://goreportcard.com/report/github.com/jmastr/gokogiri)
+[![GoDoc](https://godoc.org/github.com/jmastr/gokogiri?status.svg)](https://godoc.org/github.com/jmastr/gokogiri)
 
 LibXML bindings for the Go programming language.
 ------------------------------------------------
@@ -18,12 +18,12 @@ This fork incorporates changes required to compile on Go 1.4 and above.
 To install:
 
 - sudo apt-get install libxml2-dev libonig-dev
-- go get github.com/jbowtie/gokogiri
+- go get github.com/jmastr/gokogiri
 
 To run test:
 
-- go test github.com/jbowtie/gokogiri/html
-- go test github.com/jbowtie/gokogiri/xml
+- go test github.com/jmastr/gokogiri/html
+- go test github.com/jmastr/gokogiri/xml
 
 Basic example:
 
@@ -32,7 +32,7 @@ Basic example:
     import (
       "net/http"
       "io/ioutil"
-      "github.com/jbowtie/gokogiri"
+      "github.com/jmastr/gokogiri"
     )
 
     func main() {
