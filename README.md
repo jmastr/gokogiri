@@ -13,7 +13,7 @@ It is inspired by the ruby-based Nokogiri API, and allows one to parse, manipula
 
 It uses parsing default options that ignore errors or warnings, making it suitable for the poorly-formed 'tag soup' often found on the web. The xml.StrictParsingOption is conveniently provided for standards-compliant behaviour.
 
-This fork incorporates changes required to compile on Go 1.4 and above.
+This fork incorporates changes required to compile on Go 1.4, libxml 2.13 and oniguruma 6 and above.
 
 To install:
 
